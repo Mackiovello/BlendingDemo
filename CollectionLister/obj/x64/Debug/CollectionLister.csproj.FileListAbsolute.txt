@@ -1,0 +1,5 @@
+C:\Users\Erlend\Documents\apps\BlendingDemo\CollectionLister\bin\Debug\CollectionLister.exe
+C:\Users\Erlend\Documents\apps\BlendingDemo\CollectionLister\bin\Debug\CollectionLister.pdb
+C:\Users\Erlend\Documents\apps\BlendingDemo\CollectionLister\obj\x64\Debug\CollectionLister.csprojResolveAssemblyReference.cache
+C:\Users\Erlend\Documents\apps\BlendingDemo\CollectionLister\obj\x64\Debug\CollectionLister.exe
+C:\Users\Erlend\Documents\apps\BlendingDemo\CollectionLister\obj\x64\Debug\CollectionLister.pdb

@@ -1,0 +1,5 @@
+C:\Users\Erlend\Documents\apps\BlendingDemo\PetApp\bin\Debug\PetApp.exe
+C:\Users\Erlend\Documents\apps\BlendingDemo\PetApp\bin\Debug\PetApp.pdb
+C:\Users\Erlend\Documents\apps\BlendingDemo\PetApp\obj\x64\Debug\PetApp.exe
+C:\Users\Erlend\Documents\apps\BlendingDemo\PetApp\obj\x64\Debug\PetApp.pdb
+C:\Users\Erlend\Documents\apps\BlendingDemo\PetApp\obj\x64\Debug\PetApp.csprojResolveAssemblyReference.cache
