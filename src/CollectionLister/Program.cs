@@ -13,8 +13,6 @@ namespace CollectionLister
 
             main.Register();
             partial.Register();
-
-            Blender.MapUri("/collectionlister/partials/listpage", "list");
         }
     }
 }

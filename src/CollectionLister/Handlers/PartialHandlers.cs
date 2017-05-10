@@ -11,10 +11,7 @@ namespace CollectionLister.Handlers
     {
         public void Register()
         {
-            Handle.GET("/collectionlister/partials/listpage", () =>
-            {
-                return new ListPage();
-            });    
+
         }
 
     }
