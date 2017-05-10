@@ -1,7 +1,7 @@
 ﻿<link rel="import" href="/sys/polymer/polymer.html">
 
 <template>
-    <template is="dom-bind">
+    <template is="dom-bind">    
         <table class="table">
             <thead>
                 <tr>
@@ -10,19 +10,13 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>John</td>
-                    <td><starcounter-include partial="{{model.Pet}}"></starcounter-include></td>
-                </tr>
-                <tr>
-                    <td>Mary</td>
-                    <td>Cat</td>
-                </tr>
-                <tr>
-                    <td>July</td>
-                    <td>Hamster</td>
-                </tr>
+                <template is="dom-repeat" items="{{model.Owners}}">
+                    <tr>
+                        <td>{{item.Name}}</td>
+                        <td>{{item.Pet.Name}}</td>
+                    </tr>
+                </template>
             </tbody>
-        </table>      
+        </table>    
     </template>
 </template>

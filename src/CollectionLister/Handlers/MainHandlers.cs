@@ -15,6 +15,8 @@ namespace CollectionLister.Handlers
 
                 listPage.Pet = Self.GET("/collectionlister/partials/petentry");
 
+                listPage.Owners.Data = Db.SQL("SELECT o FROM SharedModel.PetOwner o");
+
                 return listPage;
             });
         }

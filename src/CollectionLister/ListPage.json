@@ -1,4 +1,12 @@
 {
   "Html": "/CollectionLister/views/ListPage.html",
-  "Pet": { }
+  "Pet": { },
+  "Owners": [
+    {
+      "Name": "",
+      "Pet": {
+        "Name": ""
+      }
+    }
+  ]
 }
