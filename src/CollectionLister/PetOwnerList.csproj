@@ -9,8 +9,8 @@
     <ProjectGuid>{CEC93882-73C4-41AF-A486-5A0F0906D580}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CollectionLister</RootNamespace>
-    <AssemblyName>CollectionLister</AssemblyName>
+    <RootNamespace>PetOwnerList</RootNamespace>
+    <AssemblyName>PetOwnerList</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <UseVSHostingProcess>false</UseVSHostingProcess>
