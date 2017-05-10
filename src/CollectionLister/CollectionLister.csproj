@@ -65,8 +65,6 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Handlers\MainHandlers.cs" />
-    <Compile Include="Handlers\PartialHandlers.cs" />
     <Compile Include="ListPage.json.cs">
       <DependentUpon>ListPage.json</DependentUpon>
     </Compile>

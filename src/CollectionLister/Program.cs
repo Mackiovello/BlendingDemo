@@ -1,6 +1,4 @@
-﻿using System;
-using Starcounter;
-using CollectionLister.Handlers;
+﻿using Starcounter;
 using SharedModel;
 
 namespace CollectionLister
@@ -8,6 +6,26 @@ namespace CollectionLister
     class Program
     {
         static void Main()
+        {
+            Application.Current.Use(new HtmlFromJsonProvider());
+            Application.Current.Use(new PartialToStandaloneHtmlProvider());
+
+            PopulateList();
+
+            Handle.GET("/CollectionLister", () =>
+            {
+                var listPage = GetListPage();
+
+                listPage.Owners.Data = Db.SQL("SELECT o FROM SharedModel.PetOwner o");
+
+                return listPage;
+            });
+
+            Handle.GET("/CollectionLister/partials/PetEntry/{?}", (string ownerId) => new Page { Html = "/CollectionLister/views/EmptyPage.html" });
+            Blender.MapUri("/CollectionLister/partials/PetEntry/{?}", "Pet");
+        }
+
+        private static void PopulateList()
         {
             bool listIsEmpty = Db.SQL("SELECT p FROM SharedModel.PetOwner p").First == null;
 
@@ -35,14 +53,23 @@ namespace CollectionLister
                     };
                 });
             }
+        }
 
-            var main = new MainHandlers();
-            var partial = new PartialHandlers();
+        private static ListPage GetListPage()
+        {
+            if (Session.Current == null)
+            {
+                Session.Current = new Session(SessionOptions.PatchVersioning);
+            }
 
-            main.Register();
-            partial.Register();
+            ListPage master = Session.Current.Data as ListPage;
 
-            Blender.MapUri("/CollectionLister/partials/PetEntry/{?}", "Pet");
+            if (master == null)
+            {
+                master = new ListPage() { Session = Session.Current };
+            }
+
+            return master;
         }
     }
 }
