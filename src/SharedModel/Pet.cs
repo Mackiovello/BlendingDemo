@@ -1,13 +1,10 @@
-﻿using Starcounter;
-
-namespace SharedModel
+﻿namespace SharedModel
 {
     public enum PetType
     {
-        Cat, Dog, Fish, Bird, Horse
+        Dog, Cat, Horse, Rabbit, Fish
     }
 
-    [Database]
     public class Pet
     {
         public string Name { get; set; }
