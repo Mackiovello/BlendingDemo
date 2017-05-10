@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionLister", "CollectionLister.csproj", "{CEC93882-73C4-41AF-A486-5A0F0906D580}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetApp", "..\PetApp\PetApp.csproj", "{6F03FCC6-A16E-4590-81D2-793213D5C1B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEC93882-73C4-41AF-A486-5A0F0906D580}.Debug|x64.ActiveCfg = Debug|x64
+		{CEC93882-73C4-41AF-A486-5A0F0906D580}.Debug|x64.Build.0 = Debug|x64
+		{CEC93882-73C4-41AF-A486-5A0F0906D580}.Release|x64.ActiveCfg = Release|x64
+		{CEC93882-73C4-41AF-A486-5A0F0906D580}.Release|x64.Build.0 = Release|x64
+		{6F03FCC6-A16E-4590-81D2-793213D5C1B9}.Debug|x64.ActiveCfg = Debug|x64
+		{6F03FCC6-A16E-4590-81D2-793213D5C1B9}.Debug|x64.Build.0 = Debug|x64
+		{6F03FCC6-A16E-4590-81D2-793213D5C1B9}.Release|x64.ActiveCfg = Release|x64
+		{6F03FCC6-A16E-4590-81D2-793213D5C1B9}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
