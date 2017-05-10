@@ -11,26 +11,26 @@ namespace CollectionLister.Handlers
 
             Handle.GET("/CollectionLister", () =>
             {
-                var master = GetMasterPage();
+                var listPage = GetListPage();
 
-                master.Pet = Self.GET("/collectionlister/partials/petentry");
+                listPage.Pet = Self.GET("/collectionlister/partials/petentry");
 
-                return master;
+                return listPage;
             });
         }
 
-        private MasterPage GetMasterPage()
+        private ListPage GetListPage()
         {
             if (Session.Current == null)
             {
                 Session.Current = new Session(SessionOptions.PatchVersioning);
             }
 
-            MasterPage master = Session.Current.Data as MasterPage;
+            ListPage master = Session.Current.Data as ListPage;
 
             if (master == null)
             {
-                master = new MasterPage() { Session = Session.Current };
+                master = new ListPage() { Session = Session.Current };
             }
 
             return master;

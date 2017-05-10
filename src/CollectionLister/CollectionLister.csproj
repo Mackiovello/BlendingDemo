@@ -67,19 +67,19 @@
   <ItemGroup>
     <Compile Include="Handlers\MainHandlers.cs" />
     <Compile Include="Handlers\PartialHandlers.cs" />
-    <Compile Include="MasterPage.json.cs">
-      <DependentUpon>MasterPage.json</DependentUpon>
+    <Compile Include="ListPage.json.cs">
+      <DependentUpon>ListPage.json</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <TypedJSON Include="MasterPage.json">
+    <TypedJSON Include="ListPage.json">
       <Generator>MsBuild:Compile</Generator>
     </TypedJSON>
   </ItemGroup>
   <ItemGroup>
-    <None Include="wwwroot\CollectionLister\views\MasterPage.html" />
+    <None Include="wwwroot\CollectionLister\views\ListPage.html" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\CollectionLister\views\PetEntry.html" />
