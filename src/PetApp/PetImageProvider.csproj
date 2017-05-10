@@ -74,7 +74,7 @@
     </TypedJSON>
   </ItemGroup>
   <ItemGroup>
-    <None Include="wwwroot\PetApp\views\PetImage.html" />
+    <None Include="wwwroot\PetImageProvider\views\PetImage.html" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SharedModel\SharedModel.csproj">
@@ -82,9 +82,7 @@
       <Name>SharedModel</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="handlers\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(StarcounterBin)\Starcounter.MsBuild.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

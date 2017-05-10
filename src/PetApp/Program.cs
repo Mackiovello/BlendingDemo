@@ -2,13 +2,13 @@
 using Starcounter;
 using SharedModel;
 
-namespace PetApp
+namespace PetImageProvider
 {
     class Program
     {
         static void Main()
         {
-            Handle.GET("/PetApp/partials/petimage/{?}", (string ownerId) =>
+            Handle.GET("/PetImageProvider/partials/petimage/{?}", (string ownerId) =>
             {
                 var imageFromType = new Dictionary<PetType, string>()
                 {
@@ -23,7 +23,7 @@ namespace PetApp
                 return new PetImage { Src = imageFromType[petType] };
             });
 
-            Blender.MapUri("/PetApp/partials/petimage/{?}", "Pet");
+            Blender.MapUri("/PetImageProvider/partials/petimage/{?}", "PetInfo");
         }
     }
 }

@@ -1,5 +1,5 @@
 {
-  "Html": "/CollectionLister/views/ListPage.html",
+  "Html": "/PetOwnerList/views/ListPage.html",
   "Owners": [
     {
       "Name": "",

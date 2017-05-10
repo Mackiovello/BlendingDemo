@@ -1,7 +1,7 @@
 ﻿using Starcounter;
 using SharedModel;
 
-namespace CollectionLister
+namespace PetOwnerList
 {
     class Program
     {
@@ -12,7 +12,7 @@ namespace CollectionLister
 
             PopulateList();
 
-            Handle.GET("/CollectionLister", () =>
+            Handle.GET("/PetOwnerList", () =>
             {
                 var listPage = GetListPage();
 
@@ -21,8 +21,8 @@ namespace CollectionLister
                 return listPage;
             });
 
-            Handle.GET("/CollectionLister/partials/PetEntry/{?}", (string ownerId) => new Page { Html = "/CollectionLister/views/EmptyPage.html" });
-            Blender.MapUri("/CollectionLister/partials/PetEntry/{?}", "Pet");
+            Handle.GET("/PetOwnerList/partials/PetEntry/{?}", (string ownerId) => new Json());
+            Blender.MapUri("/PetOwnerList/partials/PetEntry/{?}", "PetInfo");
         }
 
         private static void PopulateList()

@@ -77,7 +77,7 @@
     </TypedJSON>
   </ItemGroup>
   <ItemGroup>
-    <None Include="wwwroot\CollectionLister\views\ListPage.html" />
+    <None Include="wwwroot\PetOwnerList\views\ListPage.html" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SharedModel\SharedModel.csproj">
@@ -86,7 +86,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="wwwroot\CollectionLister\views\EmptyPage.html" />
+    <None Include="wwwroot\PetOwnerList\views\EmptyPage.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(StarcounterBin)\Starcounter.MsBuild.targets" />

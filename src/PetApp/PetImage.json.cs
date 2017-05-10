@@ -1,6 +1,6 @@
 using Starcounter;
 
-namespace PetApp
+namespace PetImageProvider
 {
     partial class PetImage : Json
     {

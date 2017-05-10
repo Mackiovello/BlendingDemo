@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionLister", "src\CollectionLister\CollectionLister.csproj", "{CEC93882-73C4-41AF-A486-5A0F0906D580}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetOwnerList", "src\CollectionLister\PetOwnerList.csproj", "{CEC93882-73C4-41AF-A486-5A0F0906D580}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetApp", "src\PetApp\PetApp.csproj", "{6F03FCC6-A16E-4590-81D2-793213D5C1B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetImageProvider", "src\PetApp\PetImageProvider.csproj", "{6F03FCC6-A16E-4590-81D2-793213D5C1B9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedModel", "src\SharedModel\SharedModel.csproj", "{E5F2E940-8003-4F6F-867A-835D15C87B80}"
 EndProject

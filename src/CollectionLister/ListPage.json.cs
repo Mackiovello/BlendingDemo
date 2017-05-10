@@ -1,6 +1,6 @@
 using Starcounter;
 
-namespace CollectionLister
+namespace PetOwnerList
 {
     partial class ListPage : Json
     {
@@ -10,7 +10,7 @@ namespace CollectionLister
             protected override void OnData()
             {
                 base.OnData();
-                this.Pet.Info = Self.GET("/CollectionLister/partials/PetEntry/" + this.Key);
+                this.Pet.Info = Self.GET("/PetOwnerList/partials/PetEntry/" + this.Key);
             }
         }
     }
