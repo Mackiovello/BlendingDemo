@@ -9,8 +9,8 @@
     <ProjectGuid>{6F03FCC6-A16E-4590-81D2-793213D5C1B9}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PetApp</RootNamespace>
-    <AssemblyName>PetApp</AssemblyName>
+    <RootNamespace>PetImageProvider</RootNamespace>
+    <AssemblyName>PetImageProvider</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <UseVSHostingProcess>false</UseVSHostingProcess>
