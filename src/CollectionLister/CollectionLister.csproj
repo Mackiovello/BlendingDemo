@@ -70,6 +70,9 @@
     <Compile Include="ListPage.json.cs">
       <DependentUpon>ListPage.json</DependentUpon>
     </Compile>
+    <Compile Include="PetTypePage.json.cs">
+      <DependentUpon>PetTypePage.json</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -79,6 +82,9 @@
     </TypedJSON>
   </ItemGroup>
   <ItemGroup>
+    <TypedJSON Include="PetTypePage.json">
+      <Generator>MsBuild:Compile</Generator>
+    </TypedJSON>
     <None Include="wwwroot\CollectionLister\views\ListPage.html" />
   </ItemGroup>
   <ItemGroup>
@@ -89,6 +95,9 @@
       <Project>{e5f2e940-8003-4f6f-867a-835d15c87b80}</Project>
       <Name>SharedModel</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\CollectionLister\views\PetTypePage.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(StarcounterBin)\Starcounter.MsBuild.targets" />

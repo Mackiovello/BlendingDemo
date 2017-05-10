@@ -10,7 +10,7 @@ namespace CollectionLister
             protected override void OnData()
             {
                 base.OnData();
-                this.Pet.Info = Self.GET("/CollectionLister/partials/PetEntry");
+                this.Pet.Info = Self.GET("/CollectionLister/partials/PetEntry/" + this.Key);
             }
         }
     }

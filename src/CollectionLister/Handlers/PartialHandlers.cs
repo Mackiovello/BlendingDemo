@@ -1,9 +1,6 @@
-﻿using Starcounter;
+﻿using SharedModel;
+using Starcounter;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CollectionLister.Handlers
 {
@@ -12,6 +9,16 @@ namespace CollectionLister.Handlers
         public void Register()
         {
             Handle.GET("/CollectionLister/partials/PetEntry", () => new Page() { Html = "/CollectionLister/views/PetEntry.html" });
+
+            Handle.GET("/CollectionLister/partials/PetEntry/{?}", (string ownerId) =>
+            {
+                var page = new PetTypePage();
+                var petOwner = DbHelper.FromID(DbHelper.Base64DecodeObjectID(ownerId)) as PetOwner;
+                PetType petType = petOwner.Pet.Type;
+                page.Type = Enum.GetName(typeof(PetType), petType);
+
+                return page;
+            });
         }
     }
 }
