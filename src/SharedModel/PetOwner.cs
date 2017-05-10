@@ -7,5 +7,6 @@ namespace SharedModel
     {
         public string Name;
         public Pet Pet;
+        public string Key => this.GetObjectID();
     }
 }

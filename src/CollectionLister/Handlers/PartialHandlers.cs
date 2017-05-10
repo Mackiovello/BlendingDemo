@@ -13,6 +13,5 @@ namespace CollectionLister.Handlers
         {
             Handle.GET("/CollectionLister/partials/PetEntry", () => new Page() { Html = "/CollectionLister/views/PetEntry.html" });
         }
-
     }
 }

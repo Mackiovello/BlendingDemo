@@ -13,7 +13,10 @@
                 <template is="dom-repeat" items="{{model.Owners}}">
                     <tr>
                         <td>{{item.Name}}</td>
-                        <td>{{item.Pet.Name}}</td>
+                        <td>
+                            {{item.Pet.Name}}
+                            <starcounter-include partial="{{item.Pet.Info}}"></starcounter-include>
+                        </td>
                     </tr>
                 </template>
             </tbody>
