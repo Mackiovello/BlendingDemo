@@ -14,7 +14,7 @@ namespace PetApp
             main.Register();
             partials.Register();
 
-            Blender.MapUri("/PetApp/partials/petpage", "list");
+            Blender.MapUri("/PetApp/partials/petpage", "Pet");
         }
     }
 }

@@ -11,7 +11,7 @@ namespace CollectionLister.Handlers
     {
         public void Register()
         {
-
+            Handle.GET("/CollectionLister/partials/PetEntry", () => new Page() { Html = "/CollectionLister/views/PetEntry.html" });
         }
 
     }

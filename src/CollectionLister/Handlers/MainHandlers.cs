@@ -13,7 +13,7 @@ namespace CollectionLister.Handlers
             {
                 var master = GetMasterPage();
 
-                master.CurrentPage = Self.GET("/collectionlister/partials/listpage");
+                master.Pet = Self.GET("/collectionlister/partials/petentry");
 
                 return master;
             });

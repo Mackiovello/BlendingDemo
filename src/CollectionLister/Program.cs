@@ -13,6 +13,8 @@ namespace CollectionLister
 
             main.Register();
             partial.Register();
+
+            Blender.MapUri("/collectionlister/partials/petentry", "Pet");
         }
     }
 }
